@@ -14,7 +14,7 @@ public class Patrol : MonoBehaviour
 
         for (int i = 0; i < _path.childCount; i++)
         {
-            _points[i] = _path.GetChild(i).GetComponent<Transform>();
+            _points[i] = _path.GetChild(i);
         }
     }
 
