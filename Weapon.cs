@@ -23,7 +23,6 @@ public class Weapon : MonoBehaviour
             var direction = (_target.position - transform.position).normalized;
             var newBullet = Instantiate(_bullet, transform.position + direction, Quaternion.identity);
 
-            transform.forward = direction;
             newBullet.velocity = direction * _bulletSpeed;
 
             yield return waitForSeconds;
